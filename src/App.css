@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+#root,html,body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    /* margin: 0 auto; Added */
+     float: none; /*Added */
+    box-shadow: 7px 7px;
+    font-size: 20px;
+    position: fixed;
+    display: block;
+    margin-top: 100px;  /*changed */
+    overflow: visible;
+   /* margin-right: 335px;*/
+   
+    
+    
 }
+.app{
+    height: 100%;
+    background: url('./image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+}
+.card-body{
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.thaifont{
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.title{
+    margin-bottom: 350px;
+    font-size: 60px;
+    /*margin-right: 10px;*/
+    color: rgb(49, 12, 12);
+    position:relative;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 72, 93);
+}
+.title:hover{
+    box-shadow: #ee7dbf;
+}
+button{
+    transition-duration: 0.2s;
+    border:1px;
+    color: black;
+    border-radius: 8px;
+    padding: 10px 24px;
+}
+.button:hover {
+    background-color: #e081b9; /* Green */
+    color: rgb(255, 255, 255);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  img {
+    border-radius: 8px;
+    width:50px;
+     height:100;
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
