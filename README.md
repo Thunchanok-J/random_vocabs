@@ -1,6 +1,6 @@
 # random_vocabs
 
-random vocabulary with react and vite
+random vocabulary with react and vite. learning by myself.
 
 API: [https://api.dictionaryapi.dev/api/v2/entries/en/hello](https://api.dictionaryapi.dev/api/v2/entries/en/hello)
 
