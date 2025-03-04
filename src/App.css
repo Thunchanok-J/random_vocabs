@@ -5,15 +5,14 @@
     box-sizing: border-box;
 }
 .card {
-    /* margin: 0 auto; Added */
-     float: none; /*Added */
+     float: none;
     box-shadow: 7px 7px;
     font-size: 20px;
-    position: fixed;
+    position: relative;
     display: block;
-    margin-top: 100px;  /*changed */
+    margin-top: 100px;  
     overflow: visible;
-   /* margin-right: 335px;*/
+   z-index: 5;
    
     
     
@@ -27,6 +26,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position:relative;
+    padding-top: 50px;
   
 
 }
@@ -44,11 +45,16 @@
 .title{
     margin-bottom: 350px;
     font-size: 60px;
-    /*margin-right: 10px;*/
     color: rgb(49, 12, 12);
-    position:relative;
+    position:absolute;
     text-decoration: underline;
     text-decoration-color: rgb(255, 72, 93);
+    top: 80px;
+    z-index: 15;
+}
+.card:hover ~ .title {
+    transform: translateY(20px); /* ขยับลง 20px */
+    transition: transform 0.3s ease-in-out;
 }
 .title:hover{
     box-shadow: #ee7dbf;
@@ -61,7 +67,7 @@ button{
     padding: 10px 24px;
 }
 .button:hover {
-    background-color: #e081b9; /* Green */
+    background-color: #e081b9; 
     color: rgb(255, 255, 255);
   }
   img {
